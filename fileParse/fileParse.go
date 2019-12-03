@@ -7,6 +7,10 @@ import (
 	"strings"
 )
 
+func Split(fn string, sep string) ([]string) {
+	return split(fn, sep)
+}
+
 func split(fn string, sep string) (splitdat []string) {
 	for _, sl := range strings.Split(fn, sep) {
 		if sl != "" {

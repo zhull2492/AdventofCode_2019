@@ -4,6 +4,7 @@ import (
 	"../fileParse"
 	"strconv"
 	"fmt"
+	"strings"
 )
 
 func checkInts (calcVal []int, accepted string) {
@@ -47,4 +48,9 @@ func ValidateResults (chkfile string, ires []int, fres []float64, sres []string)
 	} else if len(sres) > 0 {
 		fmt.Println("String Results")
 	}
+}
+
+func String2List (invals string, delim string) (outvals []string) {
+
+        return strings.Split(invals, delim)
 }

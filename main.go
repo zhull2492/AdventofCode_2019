@@ -61,7 +61,7 @@ Please execute with valid day number.`)
 	case 1:
 		iresult = day_01.Run(*parseFile, *debugFlag)
 	case 2:
-		day_02.Run()
+		iresult = day_02.Run(*parseFile)
 	case 3:
 		day_03.Run()
 	case 4:
